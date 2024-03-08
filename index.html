@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 </head>
 <body>
@@ -57,10 +58,25 @@
 
 </div>
 
-<div id="texto3">Direccion de Servicios Academicos</div>
+<div id="texto3">DIRECCION DE SERVICIOS ACADEMICOS</div>
+  <!-- Element to contain animated typing -->
+  <span id="element"></span>
 
 
   <script  src="./script.js"></script>
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Ing. Monica', 'Ing. Erika','Ing. Nicaise', 'Abog. Katia', 'Ing. Karla'],
+      typeSpeed: 50,
+    backSpeed: 0,
+    fadeOut: true,
+    loop: true
+    });
+  </script>
 
 </body>
 </html>
